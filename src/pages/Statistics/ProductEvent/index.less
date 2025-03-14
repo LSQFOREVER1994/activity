@@ -1,0 +1,120 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../../utils/utils.less';
+
+.cardList{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .card:last-child{
+    margin-right: 0px
+  }
+
+  .cardLeft {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 280px;
+    height: 300px;
+    overflow: hidden;
+    .cardImg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .cardLight {
+    .cardLightTit {
+      font-size: 16px;
+      font-weight: bold;
+      padding: 20px;
+    }
+  }
+
+  .card{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 280px;
+    .content{
+      display: flex;
+    }
+  }
+}
+
+.salesRank{
+  background-color: white;
+  .title{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .labelName{
+    text-align: right;
+    width: 80px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    position: absolute;
+    left: -80px;
+    top: -10px;
+    font-size: 12px;
+  }
+}
+
+.nullData{
+  height: 400px;
+  line-height: 400px;
+  text-align: center;
+}
+
+.salesTitle{
+  padding: 15px;
+  font-size: 20px;
+}
+.pieTotal{
+  font-size: 16px;
+  position: relative;
+  top: -2px;
+}
+.chartCard{
+  position: relative;
+}
+.pie{
+  position: absolute;
+  top: -90px;
+  right: -20px;
+  height: 100px;
+  width: 100px;
+}
+
+.box {
+  .left {
+    float: left;
+    width: 50%;
+    text-align: left;
+    .num {
+      color: #000000;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  .right {
+    float: right;
+    width: 50%;
+    text-align: left;
+    .num {
+      color: #000000;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+.eventBox {
+  background-color: #fff;
+  margin-top: 20px;
+  .searchBox {
+    text-align: right;
+    padding: 30px;
+  }
+}

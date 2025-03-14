@@ -1,0 +1,117 @@
+.componentSettingsWrap {
+  padding: 0 15px;
+
+  & :global(.ant-collapse-content) {
+    overflow: visible;
+  }
+
+  .componentSettingsPanel {
+    :global {
+      .ant-collapse-content-box {
+        padding: 16px 5px;
+      }
+    }
+    .componentSettingsSizeAndLocationCol {
+      text-align: right;
+      :global {
+        .ant-input-number {
+          width: 70px;
+          margin: 0 5px;
+        }
+      }
+    }
+    .componentSettingsSetSuspendMode {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      text-align: right;
+      .componentSettingsSuspendModeIcon {
+        display: flex;
+        padding-left: 10px;
+        div {
+          margin-right: 10px;
+          padding: 5px 3px;
+          border-radius: 7px;
+        }
+
+        .componentSettingsSuspendModeCurrendIcon {
+          background-color: #eee;
+        }
+      }
+    }
+
+    .componentSettingsBorderRadiusTitle{
+      color: #000000D9;
+    }
+
+    .componentSettingsBorderRadius {
+      color: #000000D9;
+      &:first-child {
+        margin-bottom: 10px;
+      }
+      .componentSettingsBorderRadiusSuffix {
+        margin-left: 5px;
+      }
+    }
+
+    .componentSettingsBoxShadowTitle{
+      padding-left: 20px;
+      color: #000000D9;
+      span {
+        padding-left: 16px;
+      }
+    }
+
+    .componentSettingsBoxShadow {
+      color: #000000D9;
+      &:first-child {
+        margin-bottom: 10px;
+      }
+      .componentSettingsBoxShadowSuffix {
+        width:40px;
+        margin-right: 5px;
+        color: #000000D9;
+
+      }
+      .componentSettingsLastBoxShadowSuffix {
+        padding-right: 14px;
+        color: #000000D9;
+        text-align: right;
+      }
+
+    }
+
+
+
+    .componentSettingsPreviewColor {
+      position: relative;
+      display: inline-block;
+      width: 136px;
+      height: 42px;
+      padding: 10px;
+      border: 1px solid rgb(217, 217, 217);
+      border-radius: 4px;
+      cursor: pointer;
+      div {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .sketchPickerMask {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 990;
+      width: 100vw;
+      height: 100vh;
+    }
+    .componentSettingsOpcityBox {
+      :global .ant-slider-track {
+        background-color: #1F3883;
+      }
+      :global .ant-slider-handle {
+        border: 2px solid #1F3883;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+export default {
+  'acount.old.password': 'old password',
+  'acount.old.password.info': 'Please input your old password',
+  'acount.new.password': 'new password',
+  'acount.new.password.info': 'Please input your new password',
+  'acount.confirm.password': 'confirm password',
+  'acount.confirm.password.info': 'Please confirm your password',
+  'acount.password.err.info': 'Inconsistent new passwords entered two times',
+  'acount.password.btnText': 'Change',
+  'acount.center.codeText': 'Code',
+  'acount.center.roleText': 'Role',
+  'acount.center.permissionText': 'Permissions',
+  'acount.login.countText': 'Number of loginings(/Num)',
+  'acount.last.loginText': 'Last Login time',
+}

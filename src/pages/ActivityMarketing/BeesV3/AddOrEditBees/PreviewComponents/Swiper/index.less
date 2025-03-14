@@ -1,0 +1,71 @@
+/*
+ * @Author: RidingWind
+ * @Date: 2021-07-20 16:39:54
+ * @Last Modified by: 绩牛信息 - RidingWind
+ * @Last Modified time: 2021-09-07 17:26:20
+ */
+
+/* @import '../../../../styles/vars.css'; */
+
+
+//! .swiper-pagination-bullet 和 .swiper-pagination-bullet-active  位置不能调换否则样式会被覆盖
+:global(.swiper-pagination-bullet) {
+	background: var(--pagination_default_color) !important;
+	opacity: 1 !important;
+}
+
+:global(.swiper-pagination-bullet-active) {
+	background: var(--pagination_current_color) !important;
+}
+
+//! .swiper-pagination-bullet 和 .swiper-pagination-bullet-active  位置不能调换否则样式会被覆盖
+
+:global(.swiper-pagination-current) {
+	color: #666 !important;
+}
+
+.main {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	pointer-events: none;
+}
+
+.swiper,
+.swiperMulti {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.swiperMulti {
+	:global {
+		.swiper-wrapper {
+			/* 之前是ease-out */
+			-webkit-transition-timing-function: linear;
+			-moz-transition-timing-function: linear;
+			-ms-transition-timing-function: linear;
+			-o-transition-timing-function: linear;
+			transition-timing-function: linear;
+		}
+	}
+}
+
+.swiperSlide {
+	width: auto;
+	height: 100%;
+	overflow: hidden;
+	pointer-events: none !important;
+}
+
+.swiperSlideImg {
+	display: block;
+	width: 100%;
+}
+
+.swiperSlideImgMulti {
+	display: block;
+	height: 100%;
+}

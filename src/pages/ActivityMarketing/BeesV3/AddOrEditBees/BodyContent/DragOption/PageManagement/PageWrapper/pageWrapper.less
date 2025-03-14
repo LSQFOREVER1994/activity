@@ -1,0 +1,37 @@
+.pageWrapper{
+    position: relative;
+	width: 375px;
+	min-height: 100%;
+	overflow: hidden;
+    transform: scale(150 / 375);
+    transform-origin: 0 0;
+}
+.empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  img {
+    width: 24px;
+    height: 28px;
+    margin-bottom: 16px;
+  }
+  p {
+    margin: 0;
+    color: #999;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+.componentWrapper{
+  position: absolute;
+  box-sizing: content-box;
+  overflow: hidden;
+  cursor: move;
+  user-select: none;
+  .groupContainer {
+    width:100%;
+    height:100%;
+  }
+}

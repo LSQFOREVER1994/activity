@@ -1,0 +1,522 @@
+
+@import '~antd/lib/style/themes/default.less';
+@import '../../../utils/utils.less';
+
+.cover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  // background-color: blue;
+}
+.listItem {
+  display: flex;
+
+  .listItemIcon {
+    margin-right: 0.6em;
+  }
+
+  .listItemText {
+    margin-left: 0.6em;
+  }
+}
+
+.settingImg {
+
+  :global {
+    // 1px 可以让选中效果显示完成
+    .ant-tabs {
+      overflow: unset;
+    }
+  }
+}
+
+.form_gains_detail > div{
+  padding-right: 10px;
+}
+.detailUploadImg {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+.form_before {
+  color:#f5222d;
+  margin-right: 4px;
+}
+.infoPics {
+  margin-top: -20px;
+  margin-bottom: 6px;
+  width: 54.16666667%;
+  margin-left: 29.16666667%;
+  font-size: 12px;
+  color:#bbb;
+}
+.form_title {
+  color:rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  // font-weight: bold;
+  display: inline-block;
+}
+.form_title::after{
+  content: ':';
+  margin: 0 8px 0 2px;
+}
+.form_action {
+  display: flex;
+  justify-content: space-around;
+}
+
+.img_box {
+  width: 150px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.85);
+  display: inline-block;
+}
+.img_box_pic {
+  width: 100%;
+  height: 100%;
+}
+.img_box_link{
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+}
+.img_box_edit{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+.img_box_mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+.img_box_del {
+  position: absolute;
+  top:2px;
+  right: 2px;
+  cursor: pointer;
+}
+.detail_rigth {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+}
+
+.filter_name{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.button_box button{
+  margin-right: 20px;
+}
+
+.messageDiv {
+  width: 100%;
+  height: 100%;
+  background-color: #DAF5FE;
+  margin-bottom: 10px;
+}
+
+.messageCard {
+  box-sizing: border-box;
+  border: none;
+  background: none;
+}
+.template_title{
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.template_box{
+  margin-top: 30px;
+}
+
+.messageAudit{
+  width:500px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+}
+
+.standardListForm{
+  .collectCards{
+    width: 97%;
+    height: 40px;
+    line-height: 40px;
+    margin:0 auto 20px auto;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #eee;
+    span{
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+  .formHeight{
+    width:93%;
+    // p{
+    //   font-size:14px;
+    //   font-weight:bold;
+    //   color:#222;
+    //   margin-left: 45px;
+    // }
+  }
+  .countNum{
+    width: 200px;
+    height: 15px;
+    line-height: 15px;
+    margin: -15px auto 10px auto;
+    font-size: 11px;
+    font-weight: 450;
+    color: #bbb;
+    user-select: none;
+  }
+}
+
+
+.template_content{
+  padding: 20px;
+  background-color: #dddddd;
+}
+.template_null{
+  padding: 30px 0;
+  text-align: center;
+}
+
+.stepsAction{
+  float: right;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  right: 0;
+  padding-top: 10px;
+  width: 100%;
+  border-top:1px solid #d9d9d9;
+  background-color: #fff;
+  text-align: right;
+}
+
+.edit_collect_content{
+  height: calc(100% - 118px);
+  overflow: auto;
+}
+
+.exampleCard{
+  width: 104px;
+  height: 104px;
+  border:1px dashed #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  .cardStyle{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .exampleText{
+    width: 100%;
+    height: 30%;
+    padding-top: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 13px;
+    color: #bbb;
+    cursor: pointer;
+  }
+}
+
+.prizeAllList{
+  box-sizing: border-box;
+  border:1px solid #ccc;
+  tr{
+    th{
+      background-color:#fff;
+    }
+  }
+  .prizeButtom{
+    width: 90%;
+    margin:20px 32px;
+  }
+}
+.tabBox {
+  display: flex;
+  // margin: 30px 0;
+  padding: 0 30px;
+  .tabItem{
+    margin-right: 5px;
+    cursor: pointer;
+    flex-grow: 1;
+    text-align: center;
+    background-color: #f5f5f5;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+  }
+  .tabItem::before{
+    content:'';
+    border-left: 15px solid #fff;
+    border-top:15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .tabItem::after{
+    content:'';
+    border-left: 15px solid #f5f5f5;
+    border-top:15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    right:-30px;
+    top: 0;
+    z-index: 5;
+  }
+  .tabActive{
+    color:#fff;
+    background-color: #1890FF
+  }
+  .tabActive::after{
+    border-left-color: #1890FF
+  }
+}
+.tabBox:first-child::before{
+  border-left-color:#f5f5f5 !important;
+
+}
+.collect_edit_steps{
+  background-color: #e6f7ff;
+}
+.collect_edit_step div {
+  cursor: default;
+}
+.collect_edit_step > div:hover div{
+  color:rgba(0, 0, 0, 0.45)
+}
+.collect_edit_grid  > div{
+  height: 100%;
+}
+.collect_edit{
+  display: flex;
+  height: 100%;
+  .collect_edit_left {
+  width: 300px;
+  flex-shrink: 0;
+  border-right: 1px solid #d9d9d9
+  }
+
+  .collect_edit_left_question{
+    width: 320px;
+    flex-shrink: 0;
+    border-right: 1px solid #d9d9d9
+  }
+  .collect_edit_right{
+    flex-grow: 100;
+    // width: 100%;
+    overflow: auto;
+    height: 100%;
+    position: relative;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .collect_edit_reminder{
+    color:#D1261B;
+    padding: 20px 0 10px 0;
+    border-top:1px solid #d9d9d9;
+  }
+  .collect_reminder{
+    color:#D1261B;
+    padding: 20px 0 10px 0;
+  }
+}
+.collect_edit_left_title{
+  font-size: 16px;
+  padding-right: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.edit_acitve_steps {
+  padding-bottom: 8px;
+  max-width: 750px;
+  margin: 0 auto;
+  // position: absolute;
+  background-color: #fff;
+  z-index: 10;
+  position: relative;
+  top: 3px;
+}
+.edit_acitve_card {
+  border: 1px solid #d9d9d9;
+  margin-bottom: 20px
+}
+.edit_active_add {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#1890FF;
+  border: 1px dashed #d9d9d9;
+}
+
+.edit_acitve_desc {
+    color:#D1261B;
+    font-size: 14px;
+    padding:  10px 0 15px;
+}
+.edit_acitve_tab::before{
+  content:'*';
+  display: inline-block;
+  color:#f5222d;
+  margin-right: 4px;
+  font-size: 14px;
+  line-height: 1;
+  font-family: SimSun, sans-serif;
+}
+.collect_iframe{
+  width: 100%;
+  height: 532px;
+  outline: none;
+  position: relative;
+  left: -15px;
+  overflow: auto;
+}
+
+.collect_iframe_barrage{
+  width: 100%;
+  height: 82%;
+  outline: none;
+  position: relative;
+  left: -15px;
+  max-height: 600px;
+}
+.collect_edit_card_size {
+  position: absolute;
+  top: 50%;
+  left: 120px;
+  line-height: 1.5;
+  margin-top: 30px;
+  width:200px;
+  color:#999;
+  font-size: 14px;
+}
+.collect_edit_active_content {
+  height: calc(100% - 47px);
+  // overflow: auto;
+}
+.edit_alert {
+  padding: 4px 30px 4px 37px;
+}
+.edit_alert i {
+  top: 6px
+}
+
+.red_rain_prize{
+  width: 90%;
+  margin: 20px auto;
+}
+.lottery_prize{
+  display: flex;
+  justify-content : flex-start
+}
+.lottery_prize_name{
+  width: 150px;
+  margin-top: 4px;
+}
+.lottery_prize_input{
+  flex: 1;
+}
+.mistake_hint{
+  margin:-3px 0 10px 155px;
+  font-size: 12px;
+  color: #d30c0c;
+}
+
+.red_share_title{
+  color: rgb(209, 38, 27);
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.imgsFlex {
+  overflow: hidden;
+}
+
+.imgsFlexTip {
+  font-size: 12px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.imgsFlexItem {
+  float: left;
+  position: relative;
+  width: 104px;
+  height: 104px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.imgsFlexItemIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  z-index: 100;
+  color: #999;
+}
+
+.prizeImgList{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+}
+
+.scoreNoShow, .scoreCss {
+  margin-bottom: 0;
+}
+
+.noRequired {
+  width: auto;
+}
+
+:global {
+  .antd-pro-pages-tool-activity-modal-activity-modal-scoreNoShow > .ant-form-item-label {
+    opacity: 0;
+  }
+
+  .antd-pro-pages-tool-activity-modal-activity-modal-noRequired > .ant-form-item-label {
+    width: auto !important;
+    
+    .ant-form-item-required {
+      &:after {
+        content: ''  !important;
+      }
+      &:before {
+        content: ''  !important;
+      }
+    }
+  }
+
+}

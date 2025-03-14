@@ -1,0 +1,128 @@
+ .main {
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+ }
+ 
+ /* 积分数字栏样式开始 */
+ .integral {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     height: calc(289 / 32 * 1rem);
+     background: url('./images/integralBg.png') no-repeat;
+     background-size: 100% 100%;
+ }
+ 
+ .integral > .digitalBox {
+     width: calc(628 / 32 * 1rem);
+     height: calc(126 / 32 * 1rem);
+     margin-top: calc(123 / 32 * 1rem);
+ }
+ 
+ /* 积分数字栏样式结束 */
+ 
+ .contentBox {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     height: fit-content;
+     margin-top: calc(22 / 32 * 1rem);
+     padding: calc(30 / 32 * 1rem);
+     border-radius: calc(20 / 32 * 1rem);
+     background: #fff;
+ }
+ 
+ /* 上证指数开始 */
+ .contentBox > .info {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+     height: calc(42 / 32 * 1rem);
+     font-weight: 400;
+     font-size: calc(30 / 32 * 1rem);
+ }
+ 
+ .contentBox > .info > .points {
+     font-weight: 500;
+ }
+ 
+ .contentBox > .info > .points span:last-child {
+     margin-left: calc(14 / 32 * 1rem);
+     color: #fd1c1c;
+ }
+ 
+ /* 上证指数结束 */
+ 
+ /* 金币开始 */
+ .contentBox > .info > .count {
+     display: flex;
+     flex: 1;
+     justify-content: flex-end;
+ }
+ 
+ .contentBox > .info > .count > span:first-child {
+     margin-right: calc(10 / 32 * 1rem);
+ }
+ 
+ /* 金币结束 */
+ 
+ /* 本期竞猜标的开始 */
+ .contentBox > .title {
+     display: flex;
+     justify-content: center;
+     width: calc(634 / 32 * 1rem);
+     height: calc(186 / 32 * 1rem);
+     margin-top: calc(30 / 32 * 1rem);
+     padding-top: calc(96 / 32 * 1rem);
+     border: calc(2 / 32 * 1rem) solid #f6dcc3;
+     border-radius: calc(12 / 32 * 1rem);
+     background: url('./images/tipBox.png') no-repeat;
+     background-size: 100% 100%;
+     color: #e51a1a;
+     font-weight: 500;
+     font-size: calc(30 / 32 * 1rem);
+ }
+ 
+ /* 本期竞猜标的结束 */
+ 
+ /* 进度条开始 */
+ .contentBox > .progressBar {
+     width: 100%;
+     height: calc(40 / 32 * 1rem);
+     margin-top: calc(32 / 32 * 1rem);
+ }
+ 
+ /* 进度条结束 */
+ 
+ /* 竞猜按钮开始 */
+ .contentBox > .btnBox {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     margin-top: calc(33 / 32 * 1rem);
+ }
+ 
+ .contentBox > .btnBox img {
+     width: calc(300 / 32 * 1rem);
+ }
+ 
+ /* 竞猜按钮结束 */
+ 
+ /* 倒计时开始 */
+ .contentBox .countDown {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     height: calc(44 / 32 * 1rem);
+     margin-top: calc(30 / 32 * 1rem);
+ }
+ 
+ .contentBox > .countDown > .label {
+     margin-right: calc(10 / 32 * 1rem);
+ }
+ 
+ /* 倒计时结束 */
+ 

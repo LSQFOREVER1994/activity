@@ -1,0 +1,155 @@
+.dragEditWrap {
+    position: relative;
+    flex:1;
+    .dragEditScrollWrap {
+        height:100%;
+        overflow-x: hidden;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+                display:none;
+            }
+        .dragEditScroll {
+            display:flex;
+            min-height:100%;
+            background-color: #f9f9f9;
+
+        }
+    }
+
+    .dragEditPeriphery {
+        position: relative;
+        z-index: 9;
+        flex:1;
+        min-height: 90px;
+        background-color: rgba(0,0,0,.1);
+        // opacity: 0.6;
+        pointer-events: none;
+    }
+    .dragEditSelectedArea {
+        position:absolute;
+        border:1px solid red;
+        // pointer-events: none;
+    }
+    .dragEditcustomGuides {
+        position:absolute;
+        background: #375ECF;
+    }
+    .dragEditinfoTipModal {
+        position:absolute;
+        padding:10px;
+        color: #fff;
+        background-color: rgba(0,0,0,.2);
+        border-radius: 4px;
+        p {
+            margin:0 4px;
+            white-space: nowrap;
+
+        }
+    }
+    .dragEditContentWrap {
+        display:flex;
+        flex-direction: column;
+        .dragEditContent {
+            position: relative;
+            width: 375px;
+            height: 718px;
+            background: #f1f1f1;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.16);
+            .dragEditContentOperation {
+                position:absolute;
+                top:50%;
+                left:50%;
+                width: 375px;
+                height: 718px;
+                .dragEditContentGuids {
+                    position:absolute;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #1F3883;
+                    span {
+                        color:red;
+                    }
+                }
+            }
+            .dragEditFullScreen,.dragEditStandardScreen {
+                position:absolute;
+                top:calc(621px - 18px);
+                left:0;
+                display:flex;
+                width:115%;
+                pointer-events: none;
+                div {
+                    width:90%;
+                    border-bottom: 2px dotted #979797;
+                }
+                span {
+                    margin-left:5px;
+                    color: #666;
+                    font-weight: 500;
+                    font-size: 12px;
+                }
+            }
+            .dragEditFullScreen {
+                top:calc(718px - 18px);
+            }
+            .dragEditContentSizeInfo {
+                position: absolute;
+                bottom: -15px;
+                left: 0;
+                width: 100%;
+                height: 15px;
+                text-align: center;
+                border-top: 2px solid #1F3883;
+                .dragEditContentSize{
+                    width: 30px;
+                    height: 10px;
+                    margin: 0 auto;
+                    color: #fff;
+                    font-weight: 900;
+                    line-height: 5px;
+                    background: #1F3883;
+                    border-radius: 2px;
+                    cursor: ns-resize;
+                }
+                .dragEditContentSizeHeight {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    color: #000;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .dragEditRuleFont{
+      position: absolute;
+      bottom: 0;
+      margin-left: 3px;
+      color: #aaa;
+      font-size: 12px;
+      &Vertical{
+        transform: rotateX(180deg);
+      }
+    }
+    .dragEditRuleView {
+      position: absolute;
+      z-index: 9;
+      height: 30px;
+			background-repeat: no-repeat;
+			background-position: 0.05em 100%, 0.05em 100%, 0.05em 100%;
+			background-size: 100% 18px,100% 12px;
+			border-bottom: 1px  dashed #aaa;
+      cursor: pointer;
+      &Cross {
+        top:-29px;
+        left:0;
+    }
+    &Vertical {
+        top:-1px;
+        left:-29px;
+        transform: rotate(270deg) rotateY(180deg);
+        transform-origin:0 0;
+    }
+  }
+}

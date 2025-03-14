@@ -1,0 +1,117 @@
+/*
+ * @Author: RidingWind
+ * @Date: 2018-07-12 10:29:17
+ * @Last Modified by: 绩牛金融 - RidingWind
+ * @Last Modified time: 2018-07-13 11:24:15
+ */
+
+ .titleBox {
+  overflow: hidden;
+}
+
+.titleBoxLeft {
+  float: left;
+}
+
+.titleBoxRight {
+  float: right;
+}
+
+.btn {
+  margin-left: 0.5rem;
+}
+
+.btns {
+  overflow: hidden;
+}
+
+.btns .btns-btn {
+  float: left;
+}
+
+.btns .btnsBtn:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+.table-box {
+  display: flex;
+}
+
+.tableBoxText {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 5em;
+}
+
+.lists {
+  overflow: hidden;
+}
+
+.float {
+  float: left;
+  margin-right: 1em;
+}
+
+.name {
+  margin-right: 0.5em;
+}
+
+.green {
+  color: #2bc773;
+}
+
+.red {
+  color: #f00;
+}
+
+.tableHeaderbox {
+  display: flex;
+  .tableItem {
+    color:#000000d9;
+    background-color: #f9f9f9;
+  }
+}
+
+.tableItem {
+  position: relative;
+  text-align: center;
+  border-right: 1px solid #e5e5e5;
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.tableBodyBox {
+  display: flex;
+  flex-direction: column;
+  .tableItemBox {
+    display: flex;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .tableItem {
+    display: flex;
+    align-items: center;
+    &:last-child {
+      justify-content: start;
+    }
+    & > div {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      & > label {
+        margin-left: 8px !important;
+      }
+    }
+  }
+  .checkBox {
+    border-bottom: 1px solid #e5e5e5;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.arrowIcon {
+  padding: 0 10px 0 16px;
+  color: #7c7c7c;
+}

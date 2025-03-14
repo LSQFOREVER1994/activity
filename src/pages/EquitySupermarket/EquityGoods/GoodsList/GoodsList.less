@@ -1,0 +1,143 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../../../utils/utils.less';
+@import '../../globalStyles.less';
+
+.classify_container {
+  margin-top: 16px;
+  margin-right: 20px;
+  border-right: 1px solid rgb(240, 237, 241);
+}
+
+.menu_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+
+  &>img {
+    max-width: 24px;
+    max-height: 24px;
+    margin-right: 4px;
+  }
+}
+
+.grid_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .title_icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+
+.menu_container {
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: #1F3883;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #b7b7b7;
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #1F3883;
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #1F3883;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: #1F3883;
+  }
+
+  :global {
+    .ant-menu-inline .ant-menu-item::after {
+      border-right: none !important;
+    }
+  }
+}
+
+.list_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.goodsItem_container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.equity_card {
+  display: flex;
+  flex-direction: row;
+
+  .main_data {
+    width: 100%;
+  }
+
+  :global {
+
+    .ant-menu-inline,
+    .ant-menu-vertical,
+    .ant-menu-vertical-left {
+      border-right: transparent !important;
+    }
+
+    .ant-menu-submenu-arrow {
+      right: -2px !important;
+    }
+  }
+}
+
+
+// 商品列表公共样式
+.type_select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 85%;
+  height: 40px;
+}
+
+.is_email_send {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 85%;
+  height: 40px;
+
+  &>label {
+    margin: 0 60px 0 8px
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 16px;
+
+  &>div {
+    &>button:not(:first-child) {
+      margin-left: 16px;
+      color: #fff;
+      background-color: #1F3883;
+    }
+
+  }
+}

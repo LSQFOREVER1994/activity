@@ -1,0 +1,197 @@
+@import '../../../../globalStyles.less';
+
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  & > div {
+    & > button:not(:first-child) {
+      margin-left: 16px;
+      color: #fff;
+      background-color:#1F3883 ;
+    }
+  }
+}
+
+.input_num{
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
+  & > span:last-child {
+    width: 200px;
+    margin-left: 8px;
+    line-height: 40px;
+  }
+}
+
+
+.bonus_apply {
+  :global {
+    .ant-form{
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+}
+
+.red_validate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 291px;
+  margin-top: -20px;
+}
+
+
+.is_email_send{
+  height: 40px;
+  :global {
+    .ant-radio-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 40px;
+      background-color: #f7f7f7;
+    }
+    .ant-form-item-label{
+      margin-left: 15px;
+    }
+  }
+}
+
+.fixed_bonus_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 12px 12px ;
+  padding-top: 8px;
+  background-color: #cccccc6e;
+  border-radius: 8px;
+}
+
+
+.fixed_bonus{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 24px;
+  :global {
+    .ant-input-affix-wrapper{
+      margin-right: 8px;
+    }
+  }
+}
+
+.random_bonus{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 12px 16px 24px ;
+  padding: 16px 0  0 12px;
+  background: #cccccc6e;
+  border-radius: 8px;
+  :global {
+    .ant-row{
+      width: 100%;
+      margin-left: 40px;
+    }
+  }
+}
+
+.fixed_bonus_line{
+  display: flex;
+  flex-direction: row;
+  margin-top: 6px;
+  margin-left: 55px;
+  line-height: 38px;
+  :global {
+    .ant-input-affix-wrapper{
+      margin-right: 8px;
+    }
+  }
+}
+
+
+
+.phone_item_container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 8px 12px 4px;
+  padding: 8px 16px 0 4px;
+  background-color: #cccccc6e;
+  border-radius: 8px;
+}
+.phone_item{
+  display: flex;
+  flex-direction: column;
+  margin-left: 28px;
+  line-height: 38px;
+}
+.phone_new_item {
+  margin-top: 0;
+  margin-left: 28px;
+  line-height: 38px;
+}
+
+.bonus_delete{
+  width: 40px;
+  height: 12px;
+  margin-left: 12px;
+  color: red;
+  cursor:pointer;
+}
+.bonus_delete_phone{
+  width: 40px;
+  margin-left: 20px;
+  color: red;
+  cursor:pointer;
+}
+
+.bonus_delete_wxcoupon{
+  width: 40px;
+  margin-top: -25px;
+  margin-left: 13px;
+  color: red;
+  cursor:pointer;
+}
+
+
+.is_email_send_phone{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 85%;
+  height: 40px;
+  & > label {
+    margin: 0 0 0 8px
+  }
+}
+
+:global{
+  .ant-drawer-wrapper-body {
+    .ant-drawer-body {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+      height: 94%;
+    }
+  }
+}
+
+.wx_coupon_line{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  // & > .wx_line_tips{
+  //   margin: 0 20px;
+  // }
+}

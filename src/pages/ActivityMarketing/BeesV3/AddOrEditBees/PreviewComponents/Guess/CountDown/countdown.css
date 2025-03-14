@@ -1,0 +1,29 @@
+.countdown_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	min-width: calc(353 / 32 * 1rem);
+	height: 100%;
+	min-height: calc(44 / 32 * 1rem);
+}
+
+.countdown_item {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.countdown_item div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: calc(44 / 32 * 1rem);
+	min-height: calc(44 / 32 * 1rem);
+	margin: 0 calc(10 / 32 * 1rem);
+	background-image: linear-gradient(180deg, #4e505c 9%, #232a32 100%);
+	color: #fff;
+	font-weight: 500;
+	font-size: calc(28 / 32 * 1rem);
+	font-family: 'Consolas', monospace;
+}

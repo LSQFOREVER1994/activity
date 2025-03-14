@@ -1,0 +1,44 @@
+.emptyWrap {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+.layerManagementTreeTitle {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    .layerManagementTreeTitleLeft {
+        display:flex;
+        flex: 1;
+        align-items: center;
+        padding-right: 22px;
+        overflow: hidden;
+        
+        img {
+            max-width: 24px;
+            max-height: 24px;
+            margin-right:5px;
+        }
+        span {
+            overflow: hidden;
+            color: #333;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1;
+            text-overflow: ellipsis;
+        }
+        .layerManagementTreeTitleLeftInput {
+            height:24px;
+        }
+    }
+    .layerManagementTreeTitleRight {
+        font-size: 16px;
+        i {
+            margin-right:5px;
+            &:last-child {
+                margin-right:0;
+            }
+        }
+    }
+}

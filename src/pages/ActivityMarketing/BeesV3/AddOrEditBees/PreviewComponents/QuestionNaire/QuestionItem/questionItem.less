@@ -1,0 +1,161 @@
+/* 单选题样式 */
+.question_textarea textarea,
+.question_input input {
+  width: 96%;
+  padding: calc(12 / 32 * 1rem);
+  font-size: calc(31 / 32 * 1rem);
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
+
+.question_input input{
+  height: 35px;
+}
+
+.question_textarea textarea::placeholder,
+.question_input input::placeholder {
+  color: #C0C4C8;
+}
+
+/* 多选题样式 */
+.question_textarea textarea {
+  outline: none;
+}
+
+.question_textarea::selection {
+  border: #e5e5e5;
+}
+
+/* 单行文本样式 */
+
+/* 多行文本样式样式 */
+
+/* 下拉选择样式 */
+.question_drop_input input {
+  padding: 0 calc(10 / 32 * 1rem);
+  font-size: calc(31 / 32 * 1rem);
+  background: none;
+  border: none;
+  border-radius: calc(10 / 32 * 1rem);
+}
+
+.drop_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 11px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
+
+
+/* 简答题样式 */
+
+/* 评分样式 */
+
+
+/* 其余样式 */
+.element_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: calc(28 / 32 * 1rem);
+  margin-right: 10px;
+  margin-left: 25px;
+  :global{
+    .ant-radio-group,
+    .ant-checkbox-group{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ant-radio-inner,
+    .ant-checkbox-inner {
+      width: 22px;
+      height: 22px;
+    }
+
+    .ant-checkbox-inner{
+      border-radius: 8px;
+    }
+
+    .ant-radio + span,
+    .ant-checkbox + span {
+      padding-right: 11px;
+      padding-left: 11px;
+    }
+
+    .ant-radio-wrapper,
+    .ant-checkbox-wrapper{
+      margin-bottom: 10px;
+      margin-left: 0 !important;
+    }
+
+
+    .ant-rate-star:not(:last-child){
+      margin-right: 10px;
+    }
+
+    .ant-rate-star-first .anticon, .ant-rate-star-second .anticon{
+      font-size: 25px;
+    }
+
+    .ant-form-item-no-colon{
+      display: flex;
+    }
+
+    .ant-form-item-label{
+      margin-left: -14px;
+    }
+  }
+}
+
+.other_input input {
+  padding: calc(12 / 32 * 1rem);
+  font-size: calc(31 / 32 * 1rem);
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.inputItem_icon {
+  width: calc(48 / 32 * 1rem);
+  margin-right: 1rem;
+  transform: rotate(90deg);
+}
+
+.title_container{
+  width: 100%;
+}
+
+.question_title{
+  display: inline-block !important;
+  margin-left: 6px;
+  padding-top: calc(10 / 32 * 1rem);
+  font-size: calc(36 / 32 * 1rem);
+  line-height: 1.5;
+  white-space: pre-line;
+  text-align: left;
+  word-break: break-all;
+}
+
+.question_label{
+  display: flex;
+  flex-direction: row;
+}
+
+.required_tag{
+  margin-right: 4px;
+  color: red;
+  font-size: 1rem;
+}
+
+.question_desc {
+  margin: calc(12 / 32 * 1rem) 0 calc(20 / 32 * 1rem);
+  font-size: calc(30 / 32 * 1rem);
+  line-height: 1.5;
+  white-space: pre-line;
+  text-align: left;
+  word-break: break-all;
+}

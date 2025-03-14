@@ -1,0 +1,110 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../../../utils/utils.less';
+
+.labelText span {
+  margin-right: 10px;
+  color: red;
+}
+
+.add,
+.edit,
+.base {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.navs {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.navItemActive,
+.navItem {
+  width: 50%;
+  color: #fff;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgba(216,178,105,0.4);
+}
+
+.navItemActive {
+  background-color: #1F3883;
+}
+
+.editTitle {
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #1F3883;
+}
+
+.addContent,
+.editContent,
+.baseContent {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.modalTit {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.modalBox {
+  padding: 10px;
+  overflow: hidden;
+}
+
+.modalBoxItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 15%;
+  padding: 10px 0;
+  font-size: 13px;
+}
+
+.modalBoxItem:hover {
+  background-color: rgba(216,178,105,0.4);
+  border-radius: 5px;
+}
+
+.modalBoxItem img {
+  display: block;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.pageItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid #1F3883;
+  border-radius: 5px;
+}
+
+.pageItemBtns {
+  display: flex;
+}
+
+.cover {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}

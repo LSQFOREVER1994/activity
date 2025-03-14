@@ -1,0 +1,420 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+
+.UploadLogoBox {
+  height: 112px;
+  width: 54.16666667%;
+  margin-left: 29.16666667%;
+  overflow: hidden;
+}
+
+.UploadLogo {
+  width: 104px;
+  margin: 0 auto;
+}
+
+.UploadImgsBox {
+  height: 238px;
+  width: 54.16666667%;
+  margin-left: 29.16666667%;
+  overflow: hidden;
+}
+
+.UploadImg {
+  float: left;
+  box-sizing: border-box;
+  height: 100px;
+  width: calc(94 / 3 * 1%);
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+
+.errText {
+  color: rgb(245, 34, 45);
+}
+
+.infoPics {
+  margin-top: -12px;
+  margin-bottom: 6px;
+  width: 54.16666667%;
+  margin-left: 29.16666667%;
+  font-size: 12px;
+  color: rgb(245, 34, 45);
+}
+
+.imgBorder {
+  border: 1px solid @border-color-split;
+}
+
+.card {
+  width: 100%;
+  height: 124px;
+}
+
+.listImgBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100px;
+
+  .img {
+    height: 100%;
+  }
+
+  .noImg {
+    height: 70%;
+  }
+
+  .info {
+    margin-top: 10px;
+  }
+}
+.specs {
+  // height: 100px;
+  display: flex;
+
+  .specsTit {
+    width: 6em
+  }
+
+  .specsBox {
+    flex: 1;
+    overflow: hidden;
+
+    .specsBtn {
+      float: left;
+      width: 180px;
+      height: 100px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+
+    .specsCard {
+      z-index: 1;
+      position: relative;
+      float: left;
+      width: 180px;
+      height: 80px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      border-radius: 4px;
+      border: 1px solid @border-color-split;
+      color: @text-color;
+      overflow: hidden;
+      
+      .specsCardTop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 6px;
+        .specsCardTit {
+          color: @text-color;
+          // text-align: center;
+          
+          display: inline-block;
+          width: 140px;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+        }
+      }
+
+      
+
+      .specsCardText {
+        display: flex;
+        align-items: center;
+        padding: 0 4px;
+        justify-content: space-between;
+        div {
+          // width: 50%;
+          text-align: center;
+        }
+      }
+
+      .specsCardBtns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+
+        .specsCardBtn {
+          font-size: 16px;
+          width: 45%;
+          height: 25px;
+        }
+      }
+    }
+
+    .specsCard::before {
+      z-index: 0;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      // background-image: url('../../assets/card.png');
+      opacity: 0.5;
+    }
+
+  }
+}
+
+.standardList {
+  // :global {
+  //   .ant-card-head {
+  //     border-bottom: none;
+  //   }
+  //   .ant-card-head-title {
+  //     padding: 24px 0;
+  //     line-height: 32px;
+  //     margin-top: 15px;
+  //   }
+  //   .ant-card-extra {
+  //     padding: 24px 0;
+  //   }
+  //   .ant-list-pagination {
+  //     margin-top: 24px;
+  //     text-align: right;
+  //   }
+  //   .ant-avatar-lg {
+  //     width: 48px;
+  //     height: 48px;
+  //     line-height: 48px;
+  //   }
+  // }
+  .headerInfo {
+    position: relative;
+    text-align: center;
+    & > span {
+      display: inline-block;
+      margin-bottom: 4px;
+      color: @text-color-secondary;
+      font-size: @font-size-base;
+      line-height: 22px;
+    }
+    & > p {
+      color: @heading-color;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    & > em {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 56px;
+      background-color: @border-color-split;
+    }
+  }
+  .listContent {
+    font-size: 0;
+    .listContentItem {
+      display: inline-block;
+      margin-left: 20px;
+      color: @text-color-secondary;
+      font-size: @font-size-base;
+      vertical-align: middle;
+      > span {
+        display: block;
+        text-align: center;
+        line-height: 20px;
+      }
+      > p {
+        display: block;
+        text-align: center;
+        margin-top: 4px;
+        margin-bottom: 0;
+        line-height: 22px;
+      }
+    }
+  }
+  .extraContentSearch {
+    width: 272px;
+    margin-left: 16px;
+  }
+}
+
+@media screen and (max-width: @screen-xs) {
+  .standardList {
+    :global {
+      .ant-list-item-content {
+        display: block;
+        flex: none;
+        width: 100%;
+      }
+      .ant-list-item-action {
+        margin-left: 0;
+      }
+    }
+    .listContent {
+      margin-left: 0;
+      & > div {
+        margin-left: 0;
+      }
+    }
+    .listCard {
+      :global {
+        .ant-card-head-title {
+          overflow: visible;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  .standardList {
+    .extraContentSearch {
+      width: 100%;
+      margin-left: 0;
+    }
+    .headerInfo {
+      margin-bottom: 16px;
+      & > em {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .standardList {
+    .listContent {
+      & > div {
+        display: block;
+      }
+      & > div:last-child {
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+  .listCard {
+    :global {
+      .ant-radio-group {
+        display: block;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-lg) and (min-width: @screen-md) {
+  .standardList {
+    .listContent {
+      & > div {
+        display: block;
+      }
+      & > div:last-child {
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-xl) {
+  .standardList {
+    .listContent {
+      & > div {
+        margin-left: 24px;
+      }
+      & > div:last-child {
+        top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .standardList {
+    .listContent {
+      text-align: right;
+      & > div:last-child {
+        top: 0;
+      }
+    }
+  }
+}
+
+.standardListForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 32px;
+        padding-top: 4px;
+      }
+    }
+  }
+}
+
+.tableList{
+  :global {
+    .ant-table-tbody{
+      .ant-table-row{
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+.formResult {
+  width: 100%;
+  [class^='title'] {
+    margin-bottom: 8px;
+  }
+}
+
+.formHeight {
+  max-height: 500px;
+  // overflow: scroll;
+}
+
+.formFullHeight {
+  height: calc(100vh - 70px);
+  // height: 100vh;
+  overflow: scroll;
+}
+
+.ant-modal-header {
+  border-bottom: none
+}
+
+.datePicker {
+  float: left;
+  margin-right: 15px;
+}
+
+.contentSelect {
+  width: 90%;
+}
+
+.messageDiv {
+  width: 100%;
+  height: 100%;
+  background-color: #DAF5FE;
+  // margin-top: -20px;
+  margin-bottom: 10px;
+  padding:25px 20px;
+}
+
+.messageCard {
+  border:none;
+  background: none;
+  box-sizing: border-box;
+}
+
+.combo{
+  width: 100%;
+  margin:0 15px;
+  text-align:center;
+  margin:20px 0;
+  border-top:1px solid #ccc;
+}

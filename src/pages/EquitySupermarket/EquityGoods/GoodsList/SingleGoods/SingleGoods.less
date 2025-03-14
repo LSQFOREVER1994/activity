@@ -1,0 +1,258 @@
+@import '../GoodsList.less';
+@import '../../../globalStyles.less';
+
+.single_goods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 315px;
+  margin-top: 16px;
+  border: 1px solid #efecf1;
+  border-radius: 8px;
+
+  .goods_card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+
+    &>span {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 55px;
+      height: 24px;
+      color: #fff;
+      text-align: center;
+      background: #999;
+      border-radius: 5px;
+    }
+
+    .goods_img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 60%;
+      padding: 20px 10%;
+      overflow: hidden;
+
+      & img {
+        max-width: 100%;
+        max-height: 90%;
+        cursor: pointer;
+        transition: all .5s;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    &:hover .operations {
+      background-color: #fff;
+      opacity: 1;
+    }
+  }
+
+  .goods_name {
+    width: 90%;
+    margin: 4px 0 4px 0;
+    padding-left: 21px;
+    overflow: hidden;
+    font-weight: 600;
+    font-size: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .goods_info_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 13px;
+  }
+
+  .goods_sales_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 32px;
+    margin: 9px 0 9px 14px;
+    font-size: 10px;
+
+    .num_div1,
+    .num_div2 {
+      width: 123px;
+      margin-right: 12px;
+    }
+
+    .stock_border1 {
+      padding: 2px 6px 2px;
+      color: #F96307;
+      border: 1px solid #F96307;
+      border-radius: 11px;
+    }
+
+    .stock_border2 {
+      padding: 2px 6px 2px;
+      color: #07A6F3;
+      border: 1px solid #07A6F3;
+      border-radius: 11px;
+    }
+
+    .num_div1 {
+      color: #F96307;
+    }
+
+    .num_div2 {
+      color: #07A6F3
+    }
+  }
+
+}
+
+.tool_tip {
+  z-index: 8;
+
+  :global {
+    .ant-tooltip-arrow::before {
+      background-color: #fff !important;
+    }
+
+    .ant-tooltip-inner {
+      color: black;
+      background-color: #fff;
+    }
+  }
+
+  .operations {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    transition: all 0.4s;
+
+    &>div {
+      width: 100%;
+      padding: 10px;
+      cursor: pointer;
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
+
+      & :hover {
+        background-color: #f6f6f6;
+      }
+    }
+  }
+}
+
+.goods_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  width: 94%;
+  button {
+    width: 20px;
+    height: 20px;
+    line-height: 16px;
+    background-color: #eef2f5;
+    border: none;
+
+    &:hover {
+      color: #fff;
+      background-color: #edbd64;
+    }
+  }
+
+  .red_price {
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.apply {
+  width: 72px;
+  margin-top: 67px;
+  padding: 6px;
+  color: #fff;
+  background: black;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px;
+  background-color: #f8f6ff;
+  border-radius: 8px;
+
+  &>span {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+.import {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 240px;
+  margin-top: 16px;
+  padding: 16px;
+  background-color: #f8f6ff;
+
+  &>span:first-child {
+    width: 100%;
+    text-align: left;
+  }
+
+  .import_files {
+    &>div:first-child {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 4px;
+      background: url('./assets//XLSX.svg');
+    }
+
+    &>span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 12px
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    margin-top: 12px;
+    background-color: #fff;
+    border-radius: 8px;
+
+  }
+}
+
+.current_good {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 0;
+  color: #333;
+
+  &>div {
+    color: red;
+  }
+}

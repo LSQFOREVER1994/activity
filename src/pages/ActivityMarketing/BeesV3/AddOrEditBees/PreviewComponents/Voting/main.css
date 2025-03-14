@@ -1,0 +1,97 @@
+
+.main {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	padding: calc(25 / 32 * 1rem);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border-radius: calc(13 / 32 * 1rem);
+}
+
+.titleBox {
+	display: flex;
+	flex-direction: column;
+}
+
+.titleBox > div:nth-child(1) {
+	font-weight: bold;
+	font-size: calc(32 / 32 * 1rem);
+}
+
+.titleBox > div:nth-child(2) {
+	margin-top: calc(10 / 32 * 1rem);
+	font-size: calc(28 / 32 * 1rem);
+	line-height: calc(42 / 32 * 1rem);
+}
+
+.contentBox {
+	display: flex;
+	flex-direction: column;
+	margin-top: calc(10 / 32 * 1rem);
+}
+
+.row {
+	position: relative;
+	width: calc(638 / 32 * 1rem);
+	height: fit-content;
+	margin-top: calc(20 / 32 * 1rem);
+	overflow: hidden;
+	font-size: calc(28 / 32 * 1rem);
+	background-color: #f5f6fd;
+	border-radius: calc(8 / 32 * 1rem);
+}
+
+.backColor {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	height: 100%;
+	transition: width 2s ease 0s;
+}
+
+.rowBox {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: calc(20 / 32 * 1rem) 0;
+}
+
+.rowName {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	height: 100%;
+	padding: 0 calc(20 / 32 * 1rem);
+	line-height: calc(36 / 32 * 1rem);
+	border-radius: calc(8 / 32 * 1rem);
+}
+
+.numBox {
+	width: fit-content;
+}
+
+.joinNumber {
+	margin-top: calc(30 / 32 * 1rem);
+	color: #6c6d76;
+	font-size: calc(26 / 32 * 1rem);
+}
+
+.btnBox {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: calc(20 / 32 * 1rem);
+}
+
+.votingBtn {
+	width: calc(407 / 32 * 1rem);
+	height: calc(94 / 32 * 1rem);
+}

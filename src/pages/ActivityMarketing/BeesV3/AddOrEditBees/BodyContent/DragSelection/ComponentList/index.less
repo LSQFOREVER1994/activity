@@ -1,0 +1,98 @@
+.componentListWrap {
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    padding-top:20px;
+    .componentListSearch {
+        padding-right:20px;
+    }
+    .componentListFilterTypeWrap {
+        max-width: 276px;
+        margin: 15px 0;
+        .componentListFilterTypeList {
+            display:flex;
+            flex-wrap: wrap;
+            .componentListFilterTypeItem {
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                width: 80px;
+                height: 30px;
+                margin-right:8px;
+                margin-bottom: 12px;
+                background: #FFF;
+                border: 1px solid #E6E6E6;
+                border-radius: 4px;
+                cursor: pointer;
+                &:nth-child(3n) {
+                    margin-right:0;
+                }
+                &:nth-last-of-type(-n+3) {
+                    margin-bottom:0;
+                }
+                .componentListFilterTypeText {
+                    margin:0;
+                    color: #333;
+                    font-weight: 400;
+                    font-size: 13px;
+                }
+                &_active {
+                    border: 1px solid #1F3883;
+                    .componentListFilterTypeText {
+                        color: #1F3883;
+                    }
+                }
+            }
+        }
+    }
+    .componentListListWrap {
+        flex:1;
+        overflow-x: hidden;
+        .componentListList {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-right:16px;
+            .componentListItem {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 120px;
+                margin: 10px 0;
+                padding: 10px;
+                background-color: #fff;
+                border: 1px solid #1F3883;
+                border-radius: 10px;
+                cursor: pointer;
+                &:nth-child(2n) {
+                    margin-right:0;
+                }
+                .componentListImg {
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    width:64px;
+                    margin-bottom:12px;
+                    img {
+                        display:block;
+                        max-width: 100%;
+                    }
+                }
+                p {
+                    margin-bottom:0;
+                    color: #333;
+                    font-weight: 400;
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .componentListEmpty {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height:100%;
+    }
+}

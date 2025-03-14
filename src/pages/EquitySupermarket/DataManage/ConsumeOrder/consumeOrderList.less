@@ -1,0 +1,33 @@
+@import '../../globalStyles.less';
+
+.operate_container {
+  &>span {
+    color: #1890ff;
+    cursor: pointer;
+  }
+
+  &>span:first-child {
+    margin-right: 10px;
+  }
+}
+
+.file_load {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 24px;
+
+    &>div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 32px;
+    }
+  }
+}

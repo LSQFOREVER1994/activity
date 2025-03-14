@@ -1,0 +1,149 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../../utils/utils.less';
+
+.activityName{
+  float: left;
+  width: 15%;
+  height: 100%;
+  .headerTitle{
+    display:flex;
+    justify-content:flex-start;
+    .titleLeft{
+      width:5px;
+      height:20px;
+      background-color:@primary-color;
+      margin:auto 7px auto 0
+    }
+  }
+ 
+  h3{
+    font-size: 22px;
+    font-weight: 500;
+    color:#333;
+    margin: auto 0 auto 7px;
+  }
+  h4{
+    color:@primary-color;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  ul{
+    width: 85%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:0px 0 20px 0;
+    justify-content:space-between;
+    border-bottom:1px dashed #bbb;
+    padding-left: 0;
+    li{
+      font-size: 14px;
+      color:#333;
+    }
+  }
+
+}
+
+.listCard{
+  overflow: hidden;
+}
+
+:global{
+  .ant-list-item{
+    padding:0
+  }
+  // .ant-card-body{
+  //   padding: 0;
+  // }
+}
+
+
+.activityTemplate{
+  width: 85%;
+  height: 100%;
+  float: right;
+  border-left: 1px solid #ccc;
+  overflow: hidden;
+  .activityBox{
+    float: left;
+    width: 210px;
+    height: 100%;
+    margin:0 0 20px 50px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    border:1px solid #eee;
+    .name{
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      font-size: 13px;
+      color:#333;
+      text-align: center;
+      font-weight: 500;
+      // background:linear-gradient(to bottom,rgba(0,0,0,0.9),rgba(199, 193, 193, 0.2));
+      background-color: #fff;
+      box-sizing: border-box;
+    }
+    img{
+      width: 210px;
+    }
+    .maskingBox{
+      opacity: 0;
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top:0;
+      left: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgba(251, 251, 251, 0.8);
+      box-sizing: border-box;  
+      .wxImage{
+        width: 50%;
+        height: 40%;
+        margin-bottom: 10%;
+        .img{
+          width: 100%;
+        }
+      }
+      .buttomBox{
+        position: absolute;
+        bottom: 100px;
+        left: 50px;
+      }
+    }
+    .maskingBox:hover{
+      opacity: 1;
+    }
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 1400px){
+  .activityName{
+    .headerTitle{
+      .titleLeft{
+        height:18px;
+      }
+    }
+    h3{
+      font-size: 18px;
+      height: 32px;
+      line-height: 32px;
+    }
+    h4{
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    ul{
+      padding:0px 0 15px 0;
+    }
+  }
+}

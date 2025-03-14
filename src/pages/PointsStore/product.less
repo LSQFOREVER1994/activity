@@ -1,0 +1,125 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+
+.picUrlsBox {
+    width: 100px;
+    height: 100px;
+  }
+
+  .picUrls {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .btns {
+    display: flex;
+    align-items: center;
+  }
+  .standardListForm {
+    :global {
+      .ant-form-item {
+        margin-bottom: 12px;
+        &:last-child {
+          margin-bottom: 32px;
+          padding-top: 4px;
+        }
+      }
+    }
+  }
+
+  .warnBox {
+    border: 1px solid #f44336;
+  }
+
+  .warnTitle {
+    padding: 10px;
+    color: #f1eeee;
+    background: #f44336;
+  }
+
+  .cardCon {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(4, calc(25% - 20px));
+    max-height: 65vh;
+    margin-bottom: 20px;
+    overflow-y: scroll;
+  }
+
+  .cardPage {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  // .cardCon::-webkit-scrollbar {
+  //   /*滚动条整体样式*/
+  //   width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
+  //   height: 4px;
+  // }
+  // .cardCon::-webkit-scrollbar-thumb {
+  //   /*滚动条里面小方块*/
+  //   border-radius: 10px;
+  //   box-shadow: inset 0 0 5px rgba(97, 184, 179, 0.1);
+  //   background: #eee;
+  // }
+  // .cardCon::-webkit-scrollbar-track {
+  //   /*滚动条里面轨道*/
+  //   box-shadow: inset 0 0 5px rgba(87, 175, 187, 0.1);
+  //   border-radius: 10px;
+  //   background: #fff;
+  // }
+
+  .cardItem {
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+  }
+
+  .cardNo {
+    width: 100%;
+    color: #999;
+    text-align: center;
+  }
+
+  .cardNo img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .cardItemImg {
+    max-width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .cardItemName {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .rightBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .discountConfig {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+  }
+  .discountTitle {
+    padding-left: 10px;
+    background: #efefef;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .dicountTableCon {
+    padding: 10px;
+  }

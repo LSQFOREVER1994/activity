@@ -1,0 +1,15 @@
+export default {
+  'acount.old.password': '旧密码',
+  'acount.old.password.info': '请输入旧密码',
+  'acount.new.password': '新密码',
+  'acount.new.password.info': '请输入新密码',
+  'acount.confirm.password': '确认密码',
+  'acount.confirm.password.info': '请确认密码',
+  'acount.password.err.info': '两次输入的新密码不一致',
+  'acount.password.btnText': '修改',
+  'acount.center.codeText': '代码',
+  'acount.center.roleText': '角色',
+  'acount.center.permissionText': '权限',
+  'acount.login.countText': '登录次数(/次)',
+  'acount.last.loginText': '最后登录时间',
+}

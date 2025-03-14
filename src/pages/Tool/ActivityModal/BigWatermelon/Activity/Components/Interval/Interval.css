@@ -1,0 +1,40 @@
+
+/* 分段 */
+.intervalItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  border-bottom: 0px;
+}
+
+.intervalItem:last-child {
+  border: 1px solid #000;
+}
+
+
+
+.editor {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+  margin: 0  10px 0 100px;
+}
+
+.editor > span {
+  color: #1890FF;
+  cursor: pointer;
+}
+
+/* 添加分段 */
+.addItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1890FF;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 1px dashed #000;
+}

@@ -1,0 +1,107 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../../utils/utils.less';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.navs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.navsText {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 5em;
+  margin-right: 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.mainList {
+  flex: 1;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.listItem {
+  box-sizing: border-box;
+  width: 19.5%;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(216,178,105, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.listItem:hover {
+  background-color: #fffcf0;
+}
+
+.listText {
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+.listItem img {
+  display: block;
+  width: 100%;
+}
+
+.modalTop {
+  display: flex;
+  margin-top: 20px;
+}
+
+.modalImgBox {
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
+}
+
+.modalImgBox img {
+  display: block;
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+.modalTexBox {
+  font-size: 15px;
+}
+
+.flex {
+  display: flex;
+  margin-top: 15px;
+}
+
+.modalTexBoxName {
+  flex-shrink: 0;
+  width: 5em;
+}
+
+// .modalTexBoxName {
+//   fw
+// }
+
+:global {
+  .ant-modal-confirm-body .ant-modal-confirm-title {
+    text-align: center;
+  }
+
+  .ant-modal-confirm-body > .anticon + .ant-modal-confirm-title + .ant-modal-confirm-content {
+    margin-left: 0;
+  }
+}

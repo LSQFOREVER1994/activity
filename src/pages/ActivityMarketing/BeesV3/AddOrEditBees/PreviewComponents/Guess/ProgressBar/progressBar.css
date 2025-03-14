@@ -1,0 +1,57 @@
+.bar {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	width: 100%;
+	min-width: calc(634 / 32 * 1rem);
+	height: 100%;
+	min-height: calc(38 / 32 * 1rem);
+	border-radius: calc(20 / 32 * 1rem);
+	background-image: linear-gradient(90deg, #fb8265 0%, #f45345 100%);
+	color: #fff;
+	box-shadow: 0 calc(7 / 32 * 1rem) calc(4 / 32 * 1rem) 0 #ee000038;
+}
+
+.bar > .left {
+	position: absolute;
+	top: 0;
+	left: calc(16 / 32 * 1rem);
+	display: flex;
+	align-items: center;
+	height: 100%;
+	font-weight: 400;
+	font-size: calc(26 / 32 * 1rem);
+	letter-spacing: 0;
+}
+
+.bar > .right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: calc(var(--data-percent) * 1%);
+	height: 100%;
+	padding-right: calc(16 / 32 * 1rem);
+	border-radius: calc(20 / 32 * 1rem);
+	background-color: #06c65f;
+	font-weight: 400;
+	font-size: calc(26 / 32 * 1rem);
+	letter-spacing: 0;
+}
+
+.bar > .showAni {
+	animation: aniWidth 1s forwards;
+}
+
+@keyframes aniWidth {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: calc(var(--data-percent) * 1%);
+	}
+}

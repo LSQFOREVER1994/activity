@@ -1,0 +1,65 @@
+.pageManagementWrap {
+  .pageManagementAddPage {
+    display: flex;
+    justify-content: center;
+    button {
+      width: 230px;
+      height: 42px;
+      background: #fff;
+      border: 1px solid #1F3883;
+      border-radius: 4px;
+    }
+  }
+  .pageManagementDroppable {
+    padding-bottom:70px;
+    padding-left:22px;
+    .pageManagementDraggableItem {
+      display:flex;
+      height: 290px;
+      margin-top:20px;
+      user-select: none;
+      .pageManagementDraggableImgWrap {
+        width: 150px;
+        height:100%;
+        margin-right:10px;
+        overflow: hidden;
+        border-radius: 5px;
+        
+        // img {
+        //   width: 100%;
+        // }
+      }
+      .pageManagementDraggableOperation {
+        display:flex;
+        flex:1;
+        flex-direction: column;
+        justify-content: space-between;
+        .pageManagementDraggablePageName {
+          padding-right:10px;
+        }
+        .pageManagementDraggableOperationOrderNum {
+            width: 20px;
+            height: 20px;
+            color: #FFF;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            background: #CFCFCF;
+            border-radius: 4px;
+             cursor: pointer;
+             &Active {
+                background: #1F3883;
+             }
+        }
+        .pageManagementDraggableOperationBottom {
+            font-size: 16px;
+            cursor: pointer;
+            &:first-child {
+                margin-right:5px;
+            }
+        }
+      }
+    }
+  }
+}

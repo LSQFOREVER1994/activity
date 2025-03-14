@@ -1,0 +1,126 @@
+.question_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.single_question{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+  padding:5px 10px;
+  border: 1px solid #1F3883;
+  border-radius: 5px;
+  // box-shadow: -2px 3px 2px 1px rgba(0, 0, 0, 20%);
+
+  .question_title{
+    color: #333;
+    font-size: 16px;
+  }
+
+  .question_options{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.drag_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .add_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+
+.option_container{
+   display: flex;
+   flex-direction: column;
+   margin-left: 65px;
+
+  .single_option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-left: 50px;
+
+    & > input {
+      margin-right: 10px;
+      box-shadow: -2px 3px 2px 1px rgba(0, 0, 0, 20%);
+    }
+  }
+}
+
+.option_config{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.config_list_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .add_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 100px;
+  }
+}
+
+
+// 文字配置
+.text_limit{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.btn_group{
+  display: flex;
+  flex-direction: row;
+  margin-left: -10px;
+}
+
+
+.input_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .input_pre,
+  .input_suffix{
+    width: 140px;
+    white-space: nowrap;
+  }
+
+  .input_pre{
+    margin-right: 6px;
+  }
+
+  .input_suffix{
+    margin-left: 6px;
+  }
+}

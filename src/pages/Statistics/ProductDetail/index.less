@@ -1,0 +1,226 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../../utils/utils.less';
+
+.pageHeader {
+  background-color: white;
+}
+
+.cardList{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .card:last-child{
+    margin-right: 0px
+  }
+
+  // .cardLeft {
+  //   // margin-right: 20px;
+  //   // margin-bottom: 20px;
+  //   width: 280px;
+  //   height: 300px;
+  //   float: left;
+  //   overflow: hidden;
+  //   .cardImg {
+  //     width: 100%;
+  //   }
+  // }
+
+  // .cardRight {
+  //   float: left;
+  //   .cardLightTit {
+  //     font-size: 16px;
+  //     font-weight: bold;
+  //     padding: 20px;
+  //   }
+  // }
+
+  .card{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 280px;
+    .content{
+      display: flex;
+    }
+  }
+}
+
+.salesRank{
+  background-color: white;
+  .title{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .labelName{
+    text-align: right;
+    width: 80px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    position: absolute;
+    left: -80px;
+    top: -10px;
+    font-size: 12px;
+  }
+}
+
+.nullData{
+  height: 400px;
+  line-height: 400px;
+  text-align: center;
+}
+
+.salesTitle{
+  padding: 15px;
+  font-size: 20px;
+}
+.pieTotal{
+  font-size: 16px;
+  position: relative;
+  top: -2px;
+}
+.chartCard{
+  position: relative;
+}
+.pie{
+  position: absolute;
+  top: -90px;
+  right: -20px;
+  height: 100px;
+  width: 100px;
+}
+
+.box {
+  .left {
+    float: left;
+    width: 50%;
+    text-align: left;
+    .num {
+      color: #000000;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  .right {
+    float: right;
+    width: 50%;
+    text-align: left;
+    .num {
+      color: #000000;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+.eventBox {
+  background-color: #fff;
+  margin-top: 20px;
+  .searchBox {
+    text-align: right;
+    padding: 15px;
+  }
+  .table_event{
+    width: 97%;
+    margin:0 auto
+  }
+}
+
+.topBox{
+  width:100%;
+  height: 230px;
+  display: flex;
+  justify-content: space-between;
+  padding:0 20px 0 0;
+  .cardLeft{
+    width: 20%;
+    float: left;
+    .top_name{
+      margin: 5px 0 10px 0;
+      height: 30px;
+      line-height: 30px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+    .cardImg {
+      max-width: 100%;
+      display: block;
+      max-height: 162px;
+    }
+  }
+  .cardRight{
+    width: 79%;
+    float: left;
+    .trend_name{
+      margin: 0px 0 15px 0;
+      height: 30px;
+      line-height: 30px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    .cardRight_bottom{
+      display:flex;
+      justify-content: space-between;
+      .bottomBox{
+        border:1px solid #ccc;
+        padding:15px 10px;
+        background-color: #fff;
+        .today{
+          margin-bottom: 20px;
+          padding-left: 10px;
+          font-weight: bold;
+        }
+        .dataBox{
+          width: 33.333%;
+          float: left;
+          .data_details{
+            border-left: 1px solid #ccc;
+            padding-left: 20px;
+            .dataName{
+              margin-bottom: 10px;
+            }
+            .dataNum{
+              margin-bottom: 10px;
+              color: #000000;
+              font-size: 20px;
+              font-weight: bold;
+            }
+          }
+          .contrast{
+            font-size: 12px;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+ 
+  }
+}
+
+.dataTrend{
+  margin: 20px 0 10px 0px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.rateL0 {
+  background-color: rgb(230, 247, 255);
+}
+
+.rateL1 {
+  background-color: rgb(145, 213, 255);
+}
+
+.rateL2 {
+  background-color: rgb(105, 192, 255);
+}
+
+.rateL3 {
+  background-color: rgb(70, 173, 247);
+}
+
+

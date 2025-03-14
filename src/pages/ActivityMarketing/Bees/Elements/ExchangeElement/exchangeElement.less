@@ -1,0 +1,79 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../../../../utils/utils.less';
+
+.labelText span {
+  margin-right: 10px;
+  color: red;
+}
+
+.editable-cell {
+  position: relative;
+}
+
+.editable-cell-value-wrap {
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.editable-row:hover .editable-cell-value-wrap {
+  padding: 4px 11px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.cover {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.tagsBox {
+  display: flex;
+  margin-top: calc(30 / 32 * 1rem);
+  overflow: auto;
+}
+
+.tags {
+  width: calc(200 / 32 * 1rem);
+  margin-right: calc(30 / 32 * 1rem);
+  padding: calc(10 / 32 * 1rem) calc( 20 / 32 * 1rem);
+  color: #ff9107;
+  font-size: calc(30 / 32 * 1rem);
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ff9107;
+  border-radius: calc(10 / 32 * 1rem);
+  cursor: pointer;
+}
+
+.active {
+  color: #fff;
+  background: #ff9107;
+}
+
+
+.inventoryShow {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.addButton{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.money_minus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

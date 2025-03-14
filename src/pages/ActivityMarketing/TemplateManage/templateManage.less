@@ -1,0 +1,228 @@
+.searchBtn {
+  color: #fff;
+  font-size: 16px;
+  background: #1F3883;
+}
+
+.templateItemAdd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+}
+
+.templateItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+
+  & span {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+
+  .templateImgBox {
+    width: 100%;
+    height: 400px;
+    padding: 0 10px;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      cursor: pointer;
+      transition: all .5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .templateItemName {
+    margin: 10px 0;
+    color: rgb(51, 51, 51);
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .templateSetBox {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px 10px;
+    background-color: rgba(255, 255, 255);
+
+    .templateItemTipsBox {
+      display: flex;
+      width: 100%;
+      height: 18px;
+      margin-bottom: 7px;
+
+      .templateItemTips {
+        margin-right: 5px;
+        padding: 0 12px;
+        color: #fff;
+        font-size: 12px;
+        background-color: #1F3883;
+        border-radius: 5px;
+      }
+    }
+
+    .useCount {
+      color: rgb(170, 170, 170);
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .hoverWarp {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      z-index: -1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      width: 100%;
+      height: 0;
+      padding: 0 10%;
+      background: rgba(255, 255, 255, 0);
+      opacity: 0;
+      transition: all 0.4s;
+
+      .editBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        margin-top: 14px;
+        cursor: pointer;
+
+        .iconBox {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          background-color: rgb(245, 247, 251);
+          border: 1px solid #e7e9ec;
+          border-radius: 5px;
+
+          img {
+            width: 25px
+          }
+        }
+      }
+    }
+
+    &:hover .hoverWarp {
+      top: 0;
+      z-index: 2;
+      height: 60px;
+      background: rgba(255, 255, 255, 1);
+      opacity: 1;
+    }
+  }
+}
+
+.useCount {
+  color: #757474;
+  font-size: 12px;
+  transition: all 0.4s;
+}
+
+.templateBox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.nullTemplate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 74%;
+}
+
+.uploadImg span {
+  padding: 0 !important;
+}
+
+.choiceVersionBox {
+  display: flex;
+  justify-content: space-around;
+}
+
+.choiceVersionImg {
+  width: 130px;
+  height: 150px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.active {
+  border: 2px solid #1F3883;
+  border-radius: 12px;
+}
+
+.tagBox {
+  position: relative;
+  width: 100%;
+  height: 32px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.tagsShowBox {
+  position: absolute;
+  top: -5px;
+  left: 3px;
+
+  :global .ant-tag .anticon-close {
+    color: #fff;
+  }
+}
+
+.templateEditboxMore {
+  display: flex;
+  flex-direction: column;
+
+  & span {
+    margin: 5px 0;
+    cursor: pointer;
+  }
+}
+
+.templateItemTips {
+  margin-right: 5px;
+  padding: 0 12px;
+  color: rgb(224, 190, 105);
+  font-size: 12px;
+  background-color: rgb(243, 231, 209);
+  border-radius: 5px;
+}
+
+
+.audit_state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &>span {
+    margin: -20px 0 20px 0;
+  }
+}

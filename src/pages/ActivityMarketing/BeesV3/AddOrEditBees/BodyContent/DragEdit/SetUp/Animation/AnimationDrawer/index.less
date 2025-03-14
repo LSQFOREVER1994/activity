@@ -1,0 +1,25 @@
+.animationDrawerWrap {
+  .animationDrawerList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: calc(100vh - 59px - 48px);
+    overflow-x: hidden;
+    .animationDrawerItem {
+      width: 120px;
+      margin-bottom: 20px;
+      padding: 30px 0;
+      text-align: center;
+      border: 1px solid #d8d8d8;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  }
+  :global {
+    .ant-drawer-wrapper-body {
+      .ant-drawer-body {
+        height: 100%;
+      }
+    }
+  }
+}

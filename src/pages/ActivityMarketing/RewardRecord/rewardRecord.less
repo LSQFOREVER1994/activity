@@ -1,0 +1,118 @@
+.element_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .tab {
+    margin: 10px 10px 24px;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background: #1F3883;
+    }
+  }
+}
+
+.count_all {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+  &>span {
+    width: 25%;
+    padding: 12px 8px;
+
+  }
+}
+
+.reward_info {
+  :global {
+    .ant-table-footer {
+      padding: 2px;
+      background: transparent;
+    }
+  }
+}
+
+// chart
+.trend_wrapper .tooltip {
+  z-index: 8;
+  width: 100%;
+  margin: 0;
+  padding: 0 12px;
+  overflow-x: auto;
+  color: rgb(89, 89, 89);
+  background-color: transparent;
+  transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+  pointer-events: auto;
+}
+
+.trend_wrapper .tooltip_title {
+  height: 12px;
+  margin: 10px 0;
+  font-weight: 700;
+  line-height: 12px;
+}
+
+.trend_wrapper .tooltip_items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: auto;
+}
+
+.trend_wrapper .tooltip_item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 92px;
+  min-width: 92px;
+  margin-bottom: 10px;
+  margin-left: 12px;
+  padding-left: 12px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.trend_wrapper .tooltip_item .inactive {
+  opacity: 0.25;
+}
+
+.trend_wrapper .tooltip_item_marker {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  height: 60px;
+}
+
+.trend_wrapper .tooltip_item_label {
+  height: 28px;
+  margin: 2px 0 10px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.trend_wrapper .tooltip_item_value {
+  margin: 0 0 4px;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.chart_wrapper {
+  width: 100%;
+  margin-top: 30px;
+}

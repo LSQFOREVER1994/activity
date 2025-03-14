@@ -1,0 +1,55 @@
+
+.labelText span {
+  margin-right: 10px;
+  color: red;
+}
+
+.alert_text{
+  display: flex;
+  width: 100%;
+  margin-top: 2px;
+  font-size: 12px
+}
+
+.title_suffix{
+  color: rgba(0, 0, 0, 0.25)
+}
+
+.container{
+  margin-top: 16px;
+}
+
+.tab_container{
+  max-height: 70vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.add_button{
+  width: 70%;
+  margin-top: 10;
+  margin-left: 37%;
+  color:#1F3883;
+  border-color: #1F3883
+}
+
+.footer_butts{
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+  & > div:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100px;
+    margin-top: 16px;
+    .cancel_button{
+      margin-right: 10px;
+    }
+    .confirm_button{
+      color: #fff;
+      background-color: #1F3883 ;
+      border-color: #1F3883 ;
+    }
+  }
+}

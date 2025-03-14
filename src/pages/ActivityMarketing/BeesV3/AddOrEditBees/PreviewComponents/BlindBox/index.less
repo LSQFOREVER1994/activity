@@ -1,0 +1,32 @@
+.main {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.boxBefore {
+  max-width: 100%;
+}
+
+.btnBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: calc(20 / 32 * 1rem);
+  .cornerMark {
+    position: absolute;
+    top: calc(-20 / 32 * 1rem);
+    right: calc(-20 / 32 * 1rem);
+    padding: calc(2 / 32 * 1rem) calc(15 / 32 * 1rem);
+    color: #fff;
+    background-color: red;
+    border-radius: 40px;
+  }
+}
+
+.leftCount {
+  margin-top: calc(20 / 32 * 1rem);
+  text-align: center;
+}

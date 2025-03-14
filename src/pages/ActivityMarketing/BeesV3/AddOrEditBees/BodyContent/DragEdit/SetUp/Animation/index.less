@@ -1,0 +1,62 @@
+.animationWrap {
+    .animationHeader {
+        display:flex;
+        justify-content: space-evenly;
+        margin-bottom:20px;
+    }
+    .animationCollapseWrap {
+        padding:0 10px;
+        background-color: #fff;
+        :global {
+            .ant-collapse-borderless {
+                background-color: #fff;
+            }
+        }
+        .animationPanelHeader {
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            h3 {
+                margin:0;
+            }
+            p {
+                margin:0;
+                padding:4px 16px;
+                border:1px solid #ccc;
+                border-radius: 30px;
+                &:hover {
+                    color:#1F3883;
+                    border-color:#1F3883;
+                }
+            }
+            .animationPanelHeaderOperation {
+                font-size: 20px;
+                i {
+                    &:first-child {
+                        margin-right: 10px;
+                    }
+                    &:hover {
+                        color:#1F3883
+                    }
+                }
+            }
+        }
+        .animationPanelContentRow {
+            margin-bottom:6px;
+            span {
+                font-size: 14px;
+            }
+            :global {
+                .ant-col {
+                    &:nth-child(2){
+                        text-align: right;
+                    }
+                }
+                .ant-input-number {
+                    width:70px;
+                    margin:0 5px;
+                }
+            }
+        }
+    }
+}

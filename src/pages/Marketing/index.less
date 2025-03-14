@@ -1,0 +1,608 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+
+.activeBox {
+  width: 330px;
+  height: 220px;
+  position: absolute;
+  background-color:#fff;
+  border-radius: 0px;
+  box-shadow:0 0 6px 4px rgba(180, 180, 180, 0.1);
+  color: #111;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+}
+
+.box_basic{
+  background-color:#fff;
+  border-radius: 0px;
+  box-shadow:0 0 6px 4px rgba(180, 180, 180, 0.1);
+  position: relative;
+  // color:rgb(24, 144, 255);
+  color: #111;
+}
+.title{
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.title_name{
+  padding: 15px 20px;
+  // background-color: rgb(24, 144, 255);
+  font-weight: bold;
+  margin: 0;
+  font-size: 16px;
+}
+.sub_title {
+  padding: 15px 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.table{
+  border:0
+}
+
+.left_topBox{
+  width: 37%;
+  // height:702px;
+  float: left;
+  padding-right: 10px;
+  // background-color: red;
+}
+// .row_right > div[type='daiban'], .row_right > div[type='today']{
+//   padding-left: 10px
+// }
+
+.row_right > div[type='today']{
+  padding-left:10px
+}
+
+.bottomBox{
+  float: left;
+  width: 100%;
+  .commonData{
+    width: 37%;
+    float: left;
+    padding-right:10px;
+  }
+  .backlogData{
+    width: 31.5%;
+    float: left;
+  }
+}
+
+.common{
+  display: flex;
+  margin-top: 20px;
+}
+.common_item {
+  width: 20%;
+  font-size: 12px;
+  color:#666;
+  text-align: center;
+  .common_item_img_box{
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > img {
+    display: block;
+    max-width:30px;
+    margin-bottom: 10px;
+  }
+  }
+}
+
+.orderData{
+  // width: 10em;
+  margin:40px 0 0 37px
+}
+.topThreeTit{
+  padding:15px 0 0 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.activeTime{
+  float: left;
+  width: 60px;
+  height: 7px;
+  border-radius: 8px;
+  background-color: #eee;
+  margin-top: 3px;
+  div{
+    height: 7px;
+    border-radius: 6px;
+    background-color: #46A2F6
+  }
+}
+.table_box {
+  // height: 100%;
+  :global{
+    .ant-table {
+      border: 0 !important;
+    }
+    .ant-table-thead tr th {
+      border: 0;
+      font-size: 12px;
+      color:#bbb;
+      // padding: 8px 8px !important;
+    }
+    .ant-table-placeholder{
+      border-top: 0;
+    }
+    // .ant-table-body{
+    //   margin: 0 !important;
+    // }
+    .ant-table-tbody > tr > td{
+      padding-bottom:8px !important;
+      border:0;
+      // position: relative;
+    }
+    // .ant-table-tbody > tr > td:first-child{
+    //   color: red;
+    // }
+    // .ant-table-footer{
+    //   border: 0 !important
+    // }
+  }
+}
+.table_row {
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  background: #e6f7ff
+}
+.table_acitve {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top:0;
+  right: -1px;
+  background-color: #1890FF;
+}
+
+
+.tableCol{
+  min-width:35px ;
+}
+
+.chart_legend {
+  // position: absolute;
+  // top: 0;
+  // right: 15px;
+  display: flex;
+  font-size: 12px;
+}
+.chart_legend > div {
+  padding: 0 6px;
+}
+.chart_legend span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4px
+}
+.todo_list{
+  width: 100%;
+  padding: 10px 10px 0;
+  font-size: 12px;
+  height: calc(100% - 30px);
+  overflow-y: auto;
+}
+.todo_item{
+  padding-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.todo_item_content{
+  padding: 0 4px;
+}
+.todo_item_status {
+  color:#1890FF
+}
+.actionManage{
+  float:left;
+  width:19%;
+  // width:100%;
+  // height:550px;
+  max-height: 550px;
+  display: flex;
+  margin-right: 1.5%;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  background-color:#fff;
+  border-radius: 8px;
+  box-shadow:0 0 6px 4px rgba(180, 180, 180, 0.1);
+  .action{
+    height: 100px;
+    text-align: center;
+    cursor: pointer;
+    flex: 0 0 50%;
+    font-size: 14px;
+    a{
+      color:#999;
+      .icon{
+        margin:0px auto 8px auto;
+      }
+    }
+  }
+  
+}
+
+.todo_list_clear {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+}
+
+.noAccess{
+  margin:30px auto 0 auto;
+  text-align: center;
+  color: #ccc;
+}
+
+.notData{
+  font-size:70px;
+  margin-bottom:-5px 
+}
+
+.messageDiv {
+    float:left;
+    // width:39%;
+    height:550px;
+    border-radius: 8px;
+    box-shadow:0 0 6px 4px rgba(180, 180, 180, 0.1);
+    background-color:#fff;
+   .salesSituation{
+      width:90%;
+      margin:0 auto;
+      border-radius: 8px;
+      background-color: #ECF5FE;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      overflow: hidden;
+     .messageChlid{
+      float: left;
+      width:50%;
+      height:120px;
+      text-align: center;
+      padding: 15px 0 0 0;
+      font-size: 16px;
+      font-weight: 520;
+      box-sizing: border-box;
+    }
+  }
+  .orderStatus{
+    width: 100%;
+    height:20px;
+    line-height: 20px;
+    font-size: 17px;
+    font-weight:550;
+    padding-left: 20px;
+    color:#333333;
+  }
+
+  .detail{
+    width:90%;
+    height: 60%;
+    overflow: hidden;
+    margin:0 auto;
+    .orderAmount{
+      float:right;
+      width:64%;
+      height:290px;
+      background-color:#FFFDF5;
+      border-radius: 10px;
+      padding:10px 20px 5px 0px;
+      box-sizing: border-box;
+      p{
+        margin-left:15px;
+        font-weight:bold
+      }
+      .order{
+        margin-top: 5px;
+        p{
+          font-size: 15px;
+        }
+        ul{
+          li{
+            margin-left: -20px;
+            font-size: 14px;
+            margin-top: 8px;
+            .num{
+              float: right;
+              font-size: 12px;
+              color: #bbb;
+            }
+            .firstNum{
+              float: right;
+              font-size: 14px;
+              font-weight: 560;
+              color: #000;
+            }
+          }
+        }
+      }
+      .orderNumder{
+        margin-top: 20px;
+        p{
+          font-size: 15px;
+        }
+        ul{
+          li{
+            margin-left: -20px;
+            font-size: 12px;
+            margin-top: 8px;
+            color:#bbb
+          }
+        }
+      }
+    }    
+  }
+  .topThreeAmountTit{
+    padding-left:20;
+    margin:0 0 -10px 20px;
+  }
+  .topThreeOrderTit{
+    padding-left:20;
+    margin: 20px 0 -10px 20px;
+  }
+  .topThreeAmountOrder{
+    width:90%;
+    height:200px;
+    margin:0px auto;
+    box-sizing: border-box;
+    span:first-child{
+      display: inline-block;
+      width: 150px;
+      font-size:14px;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+      overflow:hidden;
+    }
+    span:last-child{
+      font-size:12px;
+      color:#b6b6b6;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+      overflow:hidden;
+    }
+   
+  }
+}
+
+
+.headline{
+  width: 100%;
+  height:50px;
+  line-height: 50px;
+  margin-top: 8px;
+  font-size: 19px;
+  font-weight:550;
+  padding-left: 20px;
+  color:#333333;
+}
+
+.smallStyle{
+  font-size:10px; 
+  color:#aaa
+}
+
+.table{
+  float:left;
+  width:100%;
+  // height:550px;
+  margin-top:20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow:0 0 6px 4px rgba(180, 180, 180, 0.1);
+  .activeTable{
+    width:100%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    padding-left: 20px;
+    // margin-bottom: 10px;
+    color:rgb(97, 179, 255);
+    box-sizing: border-box;
+  }
+  .tableButtom{
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1px solid #e5e5e5;
+  }
+  .topTable{
+    width:95%;
+    margin:0 auto 20px auto;
+    :global{
+      .ant-table-thead tr th{
+        color: #bbb;
+        font-size: 12px;
+        background-color: #fff;
+      }
+      .ant-table-tbody > tr > td{
+        border-bottom:none
+      }
+    }
+  }
+}
+
+.barTooltip{
+  position: absolute;
+  top: 0;
+  width:175px;
+  padding:8px 8px 3px 8px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 6px 4px rgba(180, 180, 180, 0.1);
+  opacity: 0.9;
+  box-sizing: border-box;
+  .tooltipTit{
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .tooltipName{
+    float: left;
+    font-size: 11px;
+    .tooltipDot{
+      float: left;
+      width: 5px;
+      height: 5px;
+      background-color:#1890FF ;
+      border-radius: 50%;
+      margin-top:8px;
+      margin-right: 10px;
+    }
+  }
+  .tooltipValue{
+    float: right;
+    font-size: 11px;
+  }
+}
+
+.basicName{
+  display:inline-block;
+  width:150px;
+  font-size: 14px;
+}
+.basicMoney{
+  font-size: 12px;
+  color:#b6b6b6;
+}
+
+
+
+@media screen and (max-width: @screen-xs) {
+
+}
+
+
+@media screen and (max-width: @screen-sm) {
+  
+}
+
+@media screen and (max-width: @screen-md) {
+  
+}
+
+@media screen and (max-width: @screen-xl) {
+  .row_left{
+    margin-top: 10px
+  }
+  .new_active{
+    // height: 500px !important;
+    padding-right: 10px;
+  }
+}
+
+// @media screen and (min-width: @screen-xl) {
+//   .row_left{
+//     padding-right: 10px;
+//   }
+  
+//   .row_left > div:first-child{
+//     margin-bottom: 10px;
+//   }
+//   .orderData{
+//     margin-left: 30px;
+//   }
+
+// }
+
+
+
+@media screen and (max-width: 1400px) {
+  .bottomBox{
+    .commonData{
+      width:50%;
+    }
+    .backlogData{
+      width:25%
+    }
+  }
+  .actionManage{
+    height: 540px;
+  }
+  .messageDiv{
+    height: 540px;
+    .salesSituation{
+      .messageChlid{
+        font-size: 14px;
+        padding-top: 20px;
+      }
+    }
+    .orderStatus{
+      font-size: 14px;
+    }
+    .detail{
+      .orderAmount{
+        height: 280px;
+        margin-top: 10px;
+        .order{
+          margin-top: 5px;
+          p{
+            font-size: 14px;
+          }
+          ul{
+            li{
+              font-size: 13px;
+            }
+          }
+        }
+        .orderNumder{
+          margin-top: 30px;
+          p{
+            font-size: 14px;
+          }
+          ul{
+            li{
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .topThreeAmountTit{
+      font-size: 13px;
+    }
+    .topThreeOrderTit{
+      font-size: 13px;
+    }
+    .topThreeAmountOrder{
+      span:first-child{
+        font-size: 12px;
+      }
+      span:last-child{
+        font-size: 11px;
+      }
+    }
+  }
+
+  .notData{
+    font-size:60px;
+    margin-bottom:-5px 
+  }
+
+  .actionManage{
+    .leftAction{
+      .action{
+        font-size: 12px;
+      }
+    }
+  }
+
+  .headline{
+    font-size: 15px;
+  }
+
+  .table{
+    .activeTable{
+      font-size: 13px;
+    }
+  }
+}
+

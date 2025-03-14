@@ -1,0 +1,166 @@
+.main {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.videoBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  video {
+    display: block;
+    flex: 1;
+    width: 100%;
+    height: 50%;
+    background: #000;
+  }
+}
+
+.barrageBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  height: 30%;
+  max-height: calc(180 / 32 * 1rem);
+  white-space: nowrap;
+}
+
+.barrageBox div {
+  position: absolute;
+  display: inline-block;
+  transition: all 6s linear;
+}
+
+.barrageBox div.move {
+  color: #fff;
+  font-size: calc(28 / 32 * 1rem);
+  opacity: 0.8;
+
+  /* animation: barrageMove 6s linear forwards; */
+}
+
+.videoBottomBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(20 / 32 * 1rem) calc(30 / 32 * 1rem);
+}
+
+.bottomItem {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.bottomItem:last-child {
+  flex: 1.2;
+  justify-content: end;
+}
+
+.videoItem {
+  display: flex;
+  align-items: center;
+  margin-right: calc(20 / 32 * 1rem);
+  color: #333;
+  font-size: calc(24 / 32 * 1rem);
+}
+
+.videoItem.picked,
+.videoItem.pickClick {
+  color: #bf832e;
+}
+
+.pickUp {
+  display: inline-block;
+  width: calc(32 / 32 * 1rem);
+  height: calc(32 / 32 * 1rem);
+  margin-right: calc(20 / 32 * 1rem);
+  background: url('../../../assets/img/pickUp.png') no-repeat;
+  background-size: 100%;
+  transform-origin: left bottom;
+}
+
+.pickClick .pickUp {
+  animation: pick 0.6s cubic-bezier(0, 1.12, 1, 1.57) forwards;
+}
+
+.picked .pickUp {
+  background-image: url('../../../assets/img/pickUp-color.png');
+}
+
+.sLive {
+  width: calc(32 / 32 * 1rem);
+  height: calc(32 / 32 * 1rem);
+  margin-right: calc(20 / 32 * 1rem);
+}
+
+.ballBtn {
+  width: calc(42 / 32 * 1rem);
+  height: calc(42 / 32 * 1rem);
+}
+
+.sendBox {
+  display: flex;
+  align-items: center;
+  max-width: calc(300 / 32 * 1rem);
+  height: calc(68 / 32 * 1rem);
+  line-height: calc(68 / 32 * 1rem);
+}
+
+.sendBox input {
+  flex: 1;
+  width: 60%;
+  height: calc(68 / 32 * 1rem);
+  padding: 0 calc(30 / 32 * 1rem);
+  font-size: calc(28 / 32 * 1rem);
+  line-height: normal;
+  background: #f6f6f6;
+  border: none;
+  border-radius: calc(34 / 32 * 1rem) 0 0 calc(34 / 32 * 1rem);
+}
+
+.sendBox input::placeholder {
+  color: #999;
+}
+
+.sendBtn {
+  width: calc(96 / 32 * 1rem);
+  color: #fff;
+  text-align: center;
+  background: #bf832e;
+  border-radius: 0 calc(34 / 32 * 1rem) calc(34 / 32 * 1rem) 0;
+}
+
+.barrage_option {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+@keyframes pick {
+  50% {
+    transform: rotateZ(-25deg);
+  }
+
+  100% {
+    background-image: url('../../../assets/img/pickUp-color.png');
+  }
+}
+
+@keyframes barrageMove {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}

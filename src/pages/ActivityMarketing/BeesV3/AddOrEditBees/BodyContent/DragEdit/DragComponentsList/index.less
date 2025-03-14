@@ -1,0 +1,101 @@
+.dragComponentsListEmpty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  img {
+    width: 24px;
+    height: 28px;
+    margin-bottom: 16px;
+  }
+  p {
+    margin: 0;
+    color: #999;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+.dragComponentsListBorder {
+  position: absolute;
+  z-index: 9;
+  background-color: transparent;
+  outline: 1px solid #1F3883;
+  pointer-events: none;
+  .dragComponentsListBorderContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    .dragComponentsListBorderCircular {
+      position:absolute;
+      width: 9px;
+      height: 9px;
+      background: #fff;
+      border: 1px solid #1F3883;
+      border-radius: 50%;
+      pointer-events: auto;
+      &:nth-child(1) {
+        top:-4px;
+        left:-4px;
+      }
+      &:nth-child(2) {
+        top:-4px;
+        left:50%;
+        transform: translateX(-50%);
+      }
+      &:nth-child(3) {
+        top:-4px;
+        right:-4px;
+      }
+      &:nth-child(4) {
+        top:50%;
+        right:-4px;
+        transform: translateY(-50%);
+      }
+      &:nth-child(5) {
+       right:-4px;
+       bottom:-4px;
+      }
+      &:nth-child(6) {
+        bottom:-4px;
+        left:50%;
+        transform: translateX(-50%);
+      }
+      &:nth-child(7) {
+        bottom:-4px;
+        left:-4px;
+      }
+      &:nth-child(8) {
+        top:50%;
+        left:-4px;
+        transform: translateY(-50%);
+      }
+    }
+    .dragComponentsListBorderSync {
+      position: absolute;
+      top: -34px;
+      left: 50%;
+      color: #1F3883;
+      transform: translateX(-50%);
+      cursor: grab;
+      pointer-events: auto;
+    }
+  }
+}
+.rotateGuidesWrap {
+  position: absolute;
+  .rotateGuidesItem {
+    height: 1px;
+    background-color: blue;
+  }
+}
+.dragComponentsListContainer {
+  width:100%;
+  min-width: 375px;
+  height:100%;
+  min-height: 718px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}

@@ -1,0 +1,38 @@
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.marqueeHorizontal,
+.marqueeVertical {
+  height: 100%;
+
+  .marqueeItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    p {
+      margin: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.marqueeHorizontal {
+  :global(.swiper-wrapper) {
+    -webkit-transition-timing-function: linear !important;
+    -moz-transition-timing-function: linear !important;
+    -ms-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+  }
+
+  :global(.swiper-slide) {
+    /* 横向滚动无需限制宽度 */
+    width: fit-content;
+  }
+}

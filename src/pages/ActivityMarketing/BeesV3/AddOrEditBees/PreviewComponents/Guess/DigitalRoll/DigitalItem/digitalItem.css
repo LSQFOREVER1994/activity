@@ -1,0 +1,54 @@
+.digitalBox {
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+	width: calc(82 / 32 * 1rem);
+	height: 100%;
+	border: calc(1.5 / 32 * 1rem) solid #f6dcc3;
+	border-radius: calc(13 / 32 * 1rem);
+	background-image: linear-gradient(0deg, #fffaee 0%, #fff 100%);
+	color: #e42d32;
+	font-size: calc(68 / 32 * 1rem);
+}
+
+.digitalBox ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.digitalBox .digitalItem {
+	animation: ani_digital 1s linear infinite;
+	animation-delay: calc(var(--data-index) * 30ms);
+}
+
+/*
+* 动画结束动画，移动到具体的数字
+* */
+.digitalBox .digitalEnd {
+	transform: translateY(calc(var(--data-index) / 20 * -100%));
+}
+
+.digitalBox li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: calc( 126 / 32 * 1rem);
+	margin: 0;
+	padding: 0;
+}
+
+@keyframes ani_digital {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(calc(-9 / 20 * 100%));
+	}
+}

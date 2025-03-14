@@ -1,0 +1,52 @@
+.setupWrap {
+    position:fixed;
+    top:65px;
+    right:0;
+    z-index: 999;
+    width:376px;
+    overflow: hidden;
+    background: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.16);
+    .setupTitle {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        height:46px;
+        padding:15px;
+        color: #333;
+        font-weight: 400;
+        font-size: 16px;
+        background: #F0F2F5;
+    }
+    .setupContent {
+        max-height:80vh;
+        padding-bottom:10px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        :global {
+            .ant-tabs-bar {
+                margin-top:20px;
+                border-bottom:0;
+            }
+            .ant-tabs-nav-scroll {
+                display:flex;
+                justify-content: center;
+            }
+            .ant-tabs-tab {
+                height:30px !important;
+                line-height: 28px !important;
+                &:first-child {
+                    border-radius: 4px 0 0 4px;
+                }
+                &:last-child {
+                    border-radius: 0 4px 4px 0;
+                }
+                &.ant-tabs-tab-active  {
+                    border-color: #1F3883;
+
+                }
+            }
+        }
+    }
+}

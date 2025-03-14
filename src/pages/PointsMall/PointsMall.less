@@ -1,0 +1,67 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+
+.btns {
+  display: flex;
+  align-items: center;
+}
+
+.picUrlsBox {
+  width: 100px;
+  height: 100px;
+}
+
+.picUrls {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.standardListForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 32px;
+        padding-top: 4px;
+      }
+    }
+  }
+}
+
+.info {
+  width: 100%;
+  height: 60vh;
+  padding: 0 28px 28px;
+  overflow: auto;
+}
+
+.infoBox {
+  overflow: hidden;
+}
+
+.infoBoxItemImg,
+.infoBoxItem {
+  float: left;
+  width: 33.3333%;
+  padding: 5px 0;
+}
+
+.infoBoxItemImg {
+  display: flex;
+}
+
+.infoBoxItemLogo {
+  display: block;
+  width: 100px;
+}
+
+.infoBoxTit {
+  margin-top: 20px;
+}
+
+.standardListForm :global(.ant-modal-body) {
+    max-height: 70vh;
+    overflow: auto;
+  }

@@ -1,0 +1,35 @@
+.question_desc{
+  margin-left: 5px;
+}
+
+.drop_img{
+  width: 16px;
+  height: 16px;
+}
+
+.submit_btn_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 calc(24 / 32* 1rem) calc(20 / 32* 1rem);
+  text-align: center;
+  & > img {
+    width: calc(400 / 32 * 1rem);
+  }
+}
+
+.form_container{
+  overflow-x: hidden;
+  overflow-y: auto;
+  :global{
+    .ant-form-item{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.button_container{
+  width: 100%;
+  text-align: center;
+}

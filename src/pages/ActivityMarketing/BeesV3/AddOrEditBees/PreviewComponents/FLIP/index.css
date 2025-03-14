@@ -1,0 +1,36 @@
+.turn_box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.showCount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: calc(30 / 32 * 1rem) 0 calc(10 / 32 * 1rem) 0;
+  font-size: calc(32 / 32 * 1rem);
+  letter-spacing: 0;
+}
+
+.cardContent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-content: space-between;
+  box-sizing: border-box;
+}
+
+.startButtonBox{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: calc(88 / 32 * 1rem);
+  margin-top: calc(60 / 32 * 1rem);
+}
+.startButtonImg {
+  width: calc(420 / 32 * 1rem);
+  height: calc(88 / 32 * 1rem);
+}

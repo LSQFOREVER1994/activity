@@ -1,0 +1,79 @@
+@import '../../globalStyles.less';
+
+.logoBox {
+  width: 50px;
+  height: 50px;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.grid_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &>span {
+    margin-right: 8px;
+  }
+
+  .add_icon {
+    width: 18px;
+    height: 18px;
+    padding: 1px;
+    color: #1F3883;
+    border: 2px solid #1F3883;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &>svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+
+.common_container {
+  max-height: 600px;
+  padding-right: 12px;
+  overflow: auto;
+}
+
+.user_info_box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+  padding: 16px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.manager_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px 12px;
+}
+
+.manager_info {
+  display: flex;
+  flex-direction: column;
+
+  &>span:first-child {
+    color: #333;
+  }
+
+  &>span:last-child {
+    color: #666262;
+  }
+}

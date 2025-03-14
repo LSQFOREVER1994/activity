@@ -1,0 +1,62 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+
+.editor {
+  position: relative;
+}
+
+.editorFixed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  // background-color: rgba(0,0,0,0.6);
+}
+
+.editorFixed > button {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: #1890FF;
+  border: 1px solid;
+  padding: 0.5rem 2rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+:global {
+  .component-wrapper {
+    display: inline-block;
+  }
+}
+
+.uploadImg {
+  :global {
+    .ant-upload.ant-upload-select-picture-card {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      border: 0;
+      vertical-align: middle;
+      background-color: #fff;
+    }
+
+    .ant-upload.ant-upload-select-picture-card > .ant-upload {
+      display: inline-block;
+      padding: 0;
+      width: initial;
+    }
+  }
+}
+
+:global {
+  .CodeMirror {
+    height: 450px;
+  }
+}
